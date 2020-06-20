@@ -39,6 +39,8 @@ jobs:
        
     - name: deploying on surge
       run: surge ./build http://rasghar-expensetracker.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      
+      
 
                     
 
