@@ -32,13 +32,14 @@ jobs:
         cmd: install #npm install/yarn install
           
     - name: Creating build
-      run: npm build 
+      run: yarn build 
        
     - name: installing surge
       run: npm install --global surge
        
     - name: deploying on surge
       run: surge ./build http://rabi-expensetrackerapp.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        }}
       
       
 
